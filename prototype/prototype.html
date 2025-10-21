@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,37 +6,40 @@
   <title>Mission Counter</title>
 </head>
 <body>
-  <label><input type="checkbox" id="m1">mission1</label><br>
-  <label><input type="checkbox" id="m2">mission2</label><br>
-  <label><input type="checkbox" id="m3">mission3</label><br>
-  <label><input type="checkbox" id="m4">mission4</label><br>
+  <label><input type="checkbox" id="m1">LMOHAWALA1</label><br>
+  <label><input type="checkbox" id="m2">LMOHAWALA2</label><br>
+  <label><input type="checkbox" id="m3">LMOHAWALA3</label><br>
+  <label><input type="checkbox" id="m4">LMOHAWALA4</label><br>
 
-  <div id="progress" style="margin: top 250px;">0 of 4 completed</div>
+  <div id="progress" style="margin-top:8px;">0 of 4 completed</div>
 
   <script>
-    let missionOne = document.getElementById('m1');
-    let missionTwo = document.getElementById('m2');
-    let missionThree = document.getElementById('m3');
-    let missionFour = document.getElementById('m4');
+    let One = document.getElementById('m1');
+    let Two = document.getElementById('m2');
+    let Three = document.getElementById('m3');
+    let Four = document.getElementById('m4');
 
     let progressText = document.getElementById('progress');
 
     function refreshProgress() {
       let completed = 0;
-      if (missionOne.checked) completed++;
-      if (missionTwo.checked) completed++;
-      if (missionThree.checked) completed++;
-      if (missionFour.checked) completed++;
+      if (One.checked) completed++;
+      if (Two.checked) completed++;
+      if (Three.checked) completed++;
+      if (Four.checked) completed++;
 
       progressText.textContent = completed + ' of 4 completed';
     }
 
-    missionOne.addEventListener('change', refreshProgress);
-    missionTwo.addEventListener('change', refreshProgress);
-    missionThree.addEventListener('change', refreshProgress);
-    missionFour.addEventListener('change', refreshProgress);
+    One.addEventListener('change', refreshProgress);
+    Two.addEventListener('change', refreshProgress);
+    Three.addEventListener('change', refreshProgress);
+    Four.addEventListener('change', refreshProgress);
 
     refreshProgress();
   </script>
 </body>
 </html>
+
+
+ 
